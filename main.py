@@ -8,7 +8,7 @@ from flask import Flask, send_file
 APP = Flask(__name__)
 MESSAGE = "the .zip tld was a great idea"
 # language=markdown
-README = f"""# malzware.zip
+README = f"""# malware.zip
 
 {MESSAGE}
 
@@ -37,7 +37,7 @@ def download():
     return send_file(
         buf,
         as_attachment=True,
-        download_name="malzware.zip",
+        download_name="malware.zip",
         mimetype="application/zip"
     )
 
